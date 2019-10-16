@@ -1,0 +1,3 @@
+[submodule "requirements"]
+	path = requirements
+	url = git@github.com:jacekelgda/bdd-workshop-features.git

@@ -4,7 +4,8 @@ exports.config = {
     Puppeteer: {
       url: 'http://localhost:3000',
       show: true
-    }
+    },
+    MockRequest: {}
   },
   include: {},
   mocha: {},
@@ -12,7 +13,7 @@ exports.config = {
   teardown: null,
   hooks: [],
   gherkin: {
-    features: './features/*.feature',
+    features: './requirements/features/**/*.feature',
     steps: ['./step_definitions/steps.js']
   },
   plugins: {

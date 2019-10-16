@@ -1,11 +1,12 @@
-import React, {Component} from 'react';
+import React, { Component } from "react";
 
 class App extends Component {
+
     render() {
         return (
-            <div>Styles list</div>
+          <div>Implement me</div>
         )
-    }
+      }
 }
 
 export default App;

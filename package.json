@@ -1,5 +1,5 @@
 {
-  "name": "bdd-workshop",
+  "name": "bdd-workshop-ui-client",
   "version": "0.0.1",
   "private": true,
   "dependencies": {
@@ -12,7 +12,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "bdd": "./node_modules/.bin/codeceptjs run --grep \"@user-ui\"",
+    "bdd": "./node_modules/.bin/codeceptjs run --grep \"@office\"",
+    "bdd:sync": "git submodule update --remote && npm run bdd:snippets",
     "bdd:snippets": "./node_modules/.bin/codeceptjs gherkin:snippets"
   },
   "eslintConfig": {
@@ -25,6 +26,8 @@
     "not op_mini all"
   ],
   "devDependencies": {
+    "@pollyjs/adapter-puppeteer": "^2.6.3",
+    "@pollyjs/core": "^2.6.3",
     "codeceptjs": "^2.3.2",
     "puppeteer": "^1.20.0"
   }
