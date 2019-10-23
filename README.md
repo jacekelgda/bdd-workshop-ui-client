@@ -1,20 +1,30 @@
 # Install
 
-`npm i`
-
-# Start
-
-`npm run start`
+```
+npm i
+```
 
 # BDD
 
-Running tests:
+Setup which suite should bdd script run and port of application
 
-`npm run bdd`
+```
+PORT=3000
+...
+--grep \"@office\"
+```
 
-Adding new steps:
+then run
 
-`npm run bdd:snippets`
+```
+npm run bdd:sync
+```
+
+Provide implementation and
+
+```
+npm run bdd
+```
 
 # Cheet sheet
 

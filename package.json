@@ -13,7 +13,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "bdd": "./node_modules/.bin/codeceptjs run --grep \"@office\"",
-    "bdd:sync": "git submodule update --remote && npm run bdd:snippets",
+    "bdd:sync": "git submodule init && git submodule update --remote && npm run bdd:snippets",
     "bdd:snippets": "./node_modules/.bin/codeceptjs gherkin:snippets"
   },
   "eslintConfig": {
